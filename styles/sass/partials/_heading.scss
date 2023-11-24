@@ -1,0 +1,53 @@
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__name {
+    color: #fff;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  &__nav {
+    display: flex;
+    gap: 32px;
+    list-style-type: none;
+    align-items: center;
+  }
+
+  &__nav_1 {
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  &__menu {
+    display: none;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 575px) {
+  .heading {
+    &__nav {
+      display: none;
+    }
+
+    &__menu {
+      display: block;
+    }
+  }
+}
+
+.container {
+  padding: 0px 256px;
+}

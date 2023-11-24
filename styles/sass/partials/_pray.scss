@@ -1,0 +1,94 @@
+.pray {
+  padding: 0px 256px;
+
+  &__head {
+    color: var(--Text, #1d1c31);
+    font-family: Plus Jakarta Sans;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 52px; /* 130% */
+    letter-spacing: -0.8px;
+    padding-top: 120px;
+  }
+  &__list {
+    padding-left: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    text-align: center;
+    padding-top: 72px;
+    padding-bottom: 113px;
+
+    &__pic {
+      width: 80px;
+      height: 80px;
+      flex-shrink: 0;
+    }
+
+    &__topic {
+      color: var(--Text, #1d1c31);
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      padding-top: 24px;
+    }
+    &__details {
+      color: rgba(29, 28, 49, 0.6);
+      text-align: center;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px; /* 175% */
+      padding-top: 12px;
+    }
+    &__read {
+      color: var(--5-d-55-ff, #5d55ff);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-align: end;
+    }
+  }
+}
+
+@media (max-width: 1500px) {
+  .pray {
+    padding: 0px 70px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .pray {
+    padding: 0px 36px;
+    &__head {
+      padding-top: 90px;
+    }
+    &__list {
+      gap: 20px;
+      padding-bottom: 90px;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .pray {
+    padding: 22px;
+    &__head {
+      padding-top: 24px;
+    }
+    &__list {
+      flex-direction: column;
+      padding-top: 48px;
+      padding-bottom: 39px;
+
+      &__read {
+        color: black;
+        text-align: center;
+      }
+    }
+  }
+}

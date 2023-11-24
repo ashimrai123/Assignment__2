@@ -1,0 +1,132 @@
+.guideline {
+  padding: 0px 256px;
+
+  background: #5d55ff;
+  &__top {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__name {
+    color: var(--ffffff, #fff);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 52px; /* 130% */
+    letter-spacing: -0.8px;
+  }
+  &__info {
+    display: flex;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+    width: 600px;
+  }
+  &__bottom {
+    padding-top: 140px;
+    padding-bottom: 209px;
+    display: flex;
+    justify-content: center;
+  }
+  &__mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 1500px) {
+  .guideline {
+    padding: 0px 70px;
+    &__bottom {
+      padding-top: 140px;
+      padding-bottom: 209px;
+      &__figure {
+        width: 820px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .guideline {
+    padding: 0px 36px;
+    &__bottom {
+      padding-top: 140px;
+      padding-bottom: 209px;
+
+      &__figure {
+        width: 820px;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .guideline {
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__name {
+      color: var(--ffffff, #fff);
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 52px; /* 260% */
+      letter-spacing: -0.4px;
+    }
+    &__info {
+      display: none;
+    }
+    &__bottom {
+      display: none;
+    }
+    &__mobile {
+      padding-top: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      &__top {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        &__right {
+          color: var(--Text, #1d1c31);
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          display: flex;
+          width: 135px;
+          padding: 12px 20px;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          border-radius: 8px;
+          background: var(--ffffff, #fff);
+        }
+      }
+      &__bottom {
+        display: flex;
+        align-items: center;
+        gap: 64px;
+        &__left {
+          color: var(--Text, #1d1c31);
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          display: flex;
+          width: 135px;
+          padding: 12px 20px;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          border-radius: 8px;
+          background: var(--ffffff, #fff);
+        }
+      }
+    }
+  }
+}

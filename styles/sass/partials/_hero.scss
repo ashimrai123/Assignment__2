@@ -1,0 +1,225 @@
+.hero {
+  display: flex;
+  padding-top: 90px;
+  justify-content: space-between;
+  padding-bottom: 173px;
+  margin: 0;
+  gap: 150px;
+  /*------HERO LEFT ----------*/
+  &__left {
+    font-family: Plus Jakarta Sans;
+  }
+
+  &__head {
+    width: 586px;
+    color: #fff;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px; /* 125% */
+    letter-spacing: -1.12px;
+    margin-bottom: 32px;
+  }
+  &__info {
+    width: 586px;
+    color: #b6b3eb;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 32px;
+  }
+  /*------HERO Buttons ----------*/
+  &__buttons {
+    &__btnL {
+      color: #110c64;
+      background: #fff;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      display: inline-flex;
+      border-radius: 8px;
+      padding: 16px 24px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+    }
+
+    &__btnR {
+      color: #fff;
+      background-color: transparent;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      display: inline-flex;
+      border-radius: 8px;
+      padding: 16px 24px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+    }
+  }
+
+  /*------HERO bottom ----------*/
+  &__bottom {
+    display: flex;
+    gap: 52px;
+  }
+  &__stat {
+    font-style: normal;
+    line-height: normal;
+  }
+
+  &__stat--head {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 600;
+  }
+  &__stat--detail {
+    color: #b6b3eb;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  /*------HERO RIGHT ----------*/
+  &__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__mobile {
+    width: 258.246px;
+    height: 536.074px;
+    flex-shrink: 0;
+    position: relative;
+  }
+  &__masterCard {
+    max-width: 100%;
+    width: 342px;
+    height: 190px;
+    border-radius: 15px;
+    position: relative;
+    right: 15%;
+  }
+}
+
+/*----------------- TABLET 1024px  -------------------------*/
+
+@media (max-width: 1024px) {
+  .hero {
+    padding-top: 50px;
+    display: flex;
+    padding-top: 90px;
+    padding-bottom: 100px;
+    gap: 150px;
+
+    /*------HERO LEFT ----------*/
+    &__left {
+      font-family: Plus Jakarta Sans;
+    }
+
+    &__head {
+      width: 385px;
+      font-size: 36px;
+      line-height: 50px; /* 138.889% */
+    }
+    &__info {
+      width: 412px;
+      font-size: 14px;
+    }
+    /*------HERO Buttons no change for 1080px ----------*/
+
+    /*------HERO bottom ----------*/
+    &__bottom {
+      gap: 32px;
+    }
+
+    &__stat--head {
+      font-size: 24px;
+    }
+    &__stat--detail {
+      font-size: 12px;
+    }
+    /*------HERO RIGHT ----------*/
+    &__right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__masterCard {
+      right: 30%;
+    }
+  }
+}
+
+/*----------------- MOBILE 575px  -------------------------*/
+
+@media (max-width: 575px) {
+  .hero {
+    flex-direction: column;
+    padding-top: 35px;
+    padding-bottom: 25px;
+    gap: 33px;
+
+    /*------HERO LEFT ----------*/
+    &__left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+    }
+
+    &__head {
+      width: 352px;
+      font-size: 24px;
+      line-height: 38px; /* 158.333% */
+      text-align: center;
+      margin-bottom: 0;
+    }
+    &__info {
+      width: 382px;
+      font-size: 14px;
+    }
+    /*------HERO Buttons no change for ----------*/
+    &__buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    /*------HERO bottom ----------*/
+    &__bottom {
+      gap: 32px;
+    }
+
+    &__stat--head {
+      font-size: 24px;
+    }
+    &__stat--detail {
+      font-size: 12px;
+    }
+    /*------HERO RIGHT ----------*/
+    &__right {
+      position: relative;
+    }
+    &__mobile {
+      width: 176.775px;
+      height: 366.954px;
+      flex-shrink: 0;
+      left: 55%;
+    }
+    &__masterCard {
+      width: 342px;
+      height: 190px;
+      flex-shrink: 0;
+      right: 33%;
+      top: 70px;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.stripe {
+  background: #5e59d6;
+  height: 84px;
+  flex-shrink: 0;
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 256px;
+    margin: 0;
+    list-style-type: none;
+    padding-top: 24px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .stripe {
+    &__nav {
+      padding: 24px 70px;
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .stripe {
+    &__nav {
+      padding: 24px 36px;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .stripe {
+    display: none;
+  }
+}
